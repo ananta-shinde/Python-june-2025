@@ -4,12 +4,18 @@ from Department import Department
 c1 = College()
 c1.setId(100)
 c1.setName("DIEMS")
+# add new department
+c1.addDepartment()
 
-d1 = Department()
-d1.setId(1001)
-d1.setName("CSE")
+# add new student
+c1.getDepartmentById(100).addStudent()
+c1.getDepartmentById(100).addTeacher()
 
-c1.setDepartment(d1)
-c1.__departments
 
-print(c1.getDepartmentslist()[0].getName())
+print(c1.getDepartmentById(100).getName())
+print("******student list ********")
+for student in c1.getDepartmentById(100).getStudentList():
+    print(student.getName()," ",student.getEmail())
+print("******teacher list ********")
+for teacher in c1.getDepartmentById(100).getTeacherList():
+    print(teacher.getName()," ",teacher.getEmail())

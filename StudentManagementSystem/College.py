@@ -1,4 +1,4 @@
-
+from Department import Department
 class College:
 
     def __init__(self):
@@ -37,3 +37,15 @@ class College:
 
     def setDepartment(self,dept):
         self.__departments.append(dept)
+
+    def addDepartment(self):
+        d = Department()
+        d.setId(int(input("enter department id :")))
+        d.setName(input("enter department name :"))
+        self.__departments.append(d)
+
+    def getDepartmentById(self,id):
+        for d in self.__departments:
+            if (d.getId() == id):
+                return d
+        return None

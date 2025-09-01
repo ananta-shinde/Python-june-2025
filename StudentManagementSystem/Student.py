@@ -6,35 +6,35 @@ class Student:
         self.__email = None
         self.__password = None
 
-    @property
-    def name(self):
+
+    def getName(self):
         return self.__name
 
-    @name.setter
-    def name(self, value):
+
+    def setName(self, value):
         self.__name = value
 
-    @property
-    def email(self):
+
+    def getEmail(self):
         return self.__email
 
-    @email.setter
-    def email(self, value):
+
+    def setEmail(self, value):
         self.__email = value
 
-    @property
-    def password(self):
+
+    def getPassword(self):
         return self.__password
 
-    @password.setter
-    def password(self, value):
+
+    def setPassword(self, value):
         self.__password = value
 
-    @property
-    def id(self):
+
+    def getId(self):
         return self.__id
 
-    @id.setter
-    def id(self, value):
+
+    def setId(self, value):
         self.__id = value
 
