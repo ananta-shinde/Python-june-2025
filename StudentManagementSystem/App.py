@@ -19,3 +19,5 @@ for student in c1.getDepartmentById(100).getStudentList():
 print("******teacher list ********")
 for teacher in c1.getDepartmentById(100).getTeacherList():
     print(teacher.getName()," ",teacher.getEmail())
+
+

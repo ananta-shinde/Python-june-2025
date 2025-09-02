@@ -5,6 +5,8 @@ class College:
         self.__id = None
         self.__name = None
         self.__address = None
+        self.__email = None
+        self.__password = None
         self.__website = None
         self.__departments = []
 
@@ -49,3 +51,15 @@ class College:
             if (d.getId() == id):
                 return d
         return None
+
+    def getEmail(self):
+        return self.__email
+
+    def setEmail(self, value):
+        self.__email = value
+
+    def getPassword(self):
+        return self.__password
+
+    def setPassword(self, value):
+        self.__password = value
